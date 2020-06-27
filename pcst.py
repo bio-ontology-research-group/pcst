@@ -6,7 +6,7 @@ from pcst_fast import pcst_fast
 
 @ck.command()
 @ck.option('--in-file', '-i', help='Input scores file for patient')
-@ck.option('--edge-cost', '-ec', default=0.5, help='Edge cost')
+@ck.option('--edge-cost', '-ec', default=0.9, help='Edge cost')
 def main(in_file, edge_cost):
     nodes_to_ix = {}
     with open('data/nodes.txt') as f:
